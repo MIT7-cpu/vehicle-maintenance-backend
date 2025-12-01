@@ -1,6 +1,6 @@
-const pool = require('../db'); // adjust if your db connection file has a different name
+const pool = require('../db'); 
 
-// GET /api/maintenance?vehicleId=2
+// GET /api/maintenance?vehicleId=?
 exports.getMaintenance = async (req, res) => {
   try {
     const { vehicleId } = req.query;

@@ -10,7 +10,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// health check
 app.get('/', (req, res) => {
   res.json({ message: 'Vehicle Maintenance API running' });
 });
